@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "noEmit": true,
+    "emitDeclarationOnly": false,
+    "noEmitOnError": false,
+    "composite": false,
+    "disableSizeLimit": true,
+    "incremental": false,
+    "declaration": false,
+    "declarationMap": false,
+  },
+}

@@ -1,0 +1,12 @@
+{
+  "name": "tsserver-plugin",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "description": "Plugin to enhance autocompletion",
+  "dependencies": {
+    "typescript": "5.5.4"
+  },
+  "volta": {
+    "extends": "../../package.json"
+  }
+}

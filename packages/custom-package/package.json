@@ -1,0 +1,13 @@
+{
+  "name": "custom-package",
+  "private": true,
+  "exports": {
+    ".": "./main.ts"
+  },
+  "volta": {
+    "extends": "../../package.json"
+  },
+  "devDependencies": {
+    "tsserver-plugin": "workspace:*"
+  }
+}

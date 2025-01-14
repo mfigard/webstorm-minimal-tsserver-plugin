@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "plugins": [
+      {
+        "name": "tsserver-plugin"
+      }
+    ],
+    "experimentalDecorators": true,
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "lib": ["ESNext", "ESNext.array", "DOM", "DOM.Iterable"],
+    "allowJs": true,
+    "jsx": "react",
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "useUnknownInCatchVariables": false,
+    "strictPropertyInitialization": true,
+    "noUncheckedIndexedAccess": false,
+    "noImplicitOverride": false,
+    "allowArbitraryExtensions": true,
+    "skipLibCheck": true,
+    "baseUrl": "../../",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "incremental": true,
+    "noEmitOnError": true,
+    "emitDeclarationOnly": true,
+    "noEmit": false,
+    "outDir": ".dist"
+  },
+  "include": ["**/*"],
+  "exclude": [".dist"],
+}
