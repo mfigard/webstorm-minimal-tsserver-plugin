@@ -175,44 +175,6 @@ function init(modules) {
                 return [...priorFixes, ts2307QuickFix];
             }
 
-            // TS error 2304: Cannot find name 'symbol-name'
-            // when encountering this error, we want to provide a custom quick fix to add the import to the file
-            // and install the corresponding package
-            if (errorCodes.includes(2304)) {
-                const ts2304QuickFix = {
-                    fixName: 'fixCannotFindModule', // standard name defined in node_modules/typescript/lib/typescript.js line 157685 - has to be used so Typescript recognizes the quick fix
-                    description: `Add import from 'custom-package'`,
-                    changes: [
-                        {
-                            fileName,
-                            textChanges: [
-                                {
-                                    span: {
-                                        start: 0,
-                                        length: 0,
-                                    },
-                                    newText: `import { myCustomFunction3 } from 'custom-package';\n`,
-                                },
-                            ],
-                        },
-                    ],
-                    commands: [
-                        {
-                            file: fileName,
-                            type: 'install package',
-                            title: `Install package 'custom-package'`,
-                            command: 'installCustomPackage',
-                            arguments: {
-                                packageToInstall: 'custom-package',
-                                fileName,
-                            },
-                        },
-                    ],
-                };
-
-                return [...priorFixes, ts2304QuickFix];
-            }
-
             return priorFixes;
         };
 
