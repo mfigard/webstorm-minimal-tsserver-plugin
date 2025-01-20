@@ -6,7 +6,7 @@ The writing of the plugin is based off this documentation: https://github.com/mi
 
 ## Setup
 
-Everything is committed in the repo so no additional command needs to be run.
+This repo uses Yarn as its project manager. Everything is committed in the repo so no additional command needs to be run.
 
 ### Webstorm setup
 
